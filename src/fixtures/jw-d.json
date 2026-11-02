@@ -1,0 +1,34 @@
+{
+  "schema": "joinwitness.scenario/v1",
+  "specVersion": "1.0.0",
+  "layout": "single",
+  "title": "JW-D SQL NULL 语义（合成）",
+  "source": "synthetic",
+  "base": [
+    {
+      "id": "n",
+      "key": null,
+      "amountCents": "900"
+    },
+    {
+      "id": "z",
+      "key": "Z",
+      "amountCents": "1000"
+    }
+  ],
+  "mid": [
+    {
+      "id": "b1",
+      "parentKey": null
+    },
+    {
+      "id": "b2",
+      "parentKey": null
+    },
+    {
+      "id": "b3",
+      "parentKey": "Z"
+    }
+  ],
+  "tail": []
+}

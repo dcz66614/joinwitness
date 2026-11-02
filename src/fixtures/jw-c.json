@@ -1,0 +1,38 @@
+{
+  "schema": "joinwitness.scenario/v1",
+  "specVersion": "1.0.0",
+  "layout": "single",
+  "title": "JW-C 正负误差抵消（合成）",
+  "source": "synthetic",
+  "base": [
+    {
+      "id": "x",
+      "key": "X",
+      "amountCents": "-3000"
+    },
+    {
+      "id": "y",
+      "key": "Y",
+      "amountCents": "3000"
+    }
+  ],
+  "mid": [
+    {
+      "id": "bx1",
+      "parentKey": "X"
+    },
+    {
+      "id": "bx2",
+      "parentKey": "X"
+    },
+    {
+      "id": "by1",
+      "parentKey": "Y"
+    },
+    {
+      "id": "by2",
+      "parentKey": "Y"
+    }
+  ],
+  "tail": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "joinwitness.scenario/v1",
+  "specVersion": "1.0.0",
+  "layout": "star",
+  "title": "JW-A 双支路暴增（合成）",
+  "source": "synthetic",
+  "base": [
+    {
+      "id": "o1",
+      "key": "O1",
+      "amountCents": "5000"
+    },
+    {
+      "id": "o2",
+      "key": "O2",
+      "amountCents": "2400"
+    },
+    {
+      "id": "o3",
+      "key": "O3",
+      "amountCents": "1200"
+    }
+  ],
+  "mid": [
+    {
+      "id": "i11",
+      "parentKey": "O1"
+    },
+    {
+      "id": "i12",
+      "parentKey": "O1"
+    },
+    {
+      "id": "i21",
+      "parentKey": "O2"
+    },
+    {
+      "id": "i22",
+      "parentKey": "O2"
+    },
+    {
+      "id": "i23",
+      "parentKey": "O2"
+    },
+    {
+      "id": "i31",
+      "parentKey": "O3"
+    }
+  ],
+  "tail": [
+    {
+      "id": "p11",
+      "parentKey": "O1"
+    },
+    {
+      "id": "p12",
+      "parentKey": "O1"
+    },
+    {
+      "id": "p21",
+      "parentKey": "O2"
+    }
+  ]
+}

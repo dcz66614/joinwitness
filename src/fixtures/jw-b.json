@@ -1,0 +1,58 @@
+{
+  "schema": "joinwitness.scenario/v1",
+  "specVersion": "1.0.0",
+  "layout": "chain",
+  "title": "JW-B 链式分枝求和（合成）",
+  "source": "synthetic",
+  "base": [
+    {
+      "id": "a1",
+      "key": "K1",
+      "amountCents": "3000"
+    },
+    {
+      "id": "a2",
+      "key": "K2",
+      "amountCents": "700"
+    }
+  ],
+  "mid": [
+    {
+      "id": "b1",
+      "parentKey": "K1",
+      "linkKey": "L1"
+    },
+    {
+      "id": "b2",
+      "parentKey": "K1",
+      "linkKey": "L2"
+    },
+    {
+      "id": "b3",
+      "parentKey": "K2",
+      "linkKey": "L3"
+    }
+  ],
+  "tail": [
+    {
+      "id": "c1",
+      "parentKey": "L1"
+    },
+    {
+      "id": "c2",
+      "parentKey": "L1"
+    },
+    {
+      "id": "c3",
+      "parentKey": "L2"
+    },
+    {
+      "id": "c4",
+      "parentKey": "L2"
+    },
+    {
+      "id": "c5",
+      "parentKey": "L2"
+    }
+  ]
+}

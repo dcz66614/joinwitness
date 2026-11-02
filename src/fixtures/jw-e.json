@@ -1,0 +1,30 @@
+{
+  "schema": "joinwitness.scenario/v1",
+  "specVersion": "1.0.0",
+  "layout": "single",
+  "title": "JW-E DISTINCT 求和反例（合成）",
+  "source": "synthetic",
+  "base": [
+    {
+      "id": "r1",
+      "key": "R",
+      "amountCents": "1200"
+    },
+    {
+      "id": "r2",
+      "key": "S",
+      "amountCents": "1200"
+    }
+  ],
+  "mid": [
+    {
+      "id": "br1",
+      "parentKey": "R"
+    },
+    {
+      "id": "bs1",
+      "parentKey": "S"
+    }
+  ],
+  "tail": []
+}
